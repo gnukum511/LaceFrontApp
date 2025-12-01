@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A04CE38219C452DA4F68791 /* CameraSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A37FC36184757B1BE6E56 /* CameraSessionManager.swift */; };
+		1A08CC7D403A49C8B0F8E0A0 /* FaceTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FB56C1608420C86D3C57E /* FaceTrackingViewModel.swift */; };
+		1A35E1F75986432FAAB03588 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A604A11E8C2481DBD65AB61 /* CGPoint+Extensions.swift */; };
+		1A3E7EC8A7C04E89AA2C5C99 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73D15B86C94333A6D3D8E8 /* CameraPreviewView.swift */; };
+		1A3F96AFEC484A27A10B7809 /* WigGuidelineCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDF9376BC4FADBE3A1D32 /* WigGuidelineCalculator.swift */; };
+		1A484B0F4A684DF7957E3C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9AB1D5DA364A25A8BAEF6A /* Assets.xcassets */; };
+		1A5E3D3515F64C1BAE418CA9 /* LaceFrontWigsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A9F9A6BB54D059B71E5D0 /* LaceFrontWigsApp.swift */; };
+		1A6A4B0BFC1F4B1E8F9D4AD3 /* WigGuidelineState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47A3F4D3A1434E91F79A4F /* WigGuidelineState.swift */; };
+		1A71D9BB9B3B4C1E8D181EE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F2DEE0D2643C0B9BCA5C5 /* Preview Assets.xcassets */; };
+		1A7B90E5D28C4ECB82BC2A5B /* GuidelineOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F582E604347EB809015B4 /* GuidelineOverlayView.swift */; };
+		1A9B7DF9C6334E6C8FE9A96C /* WigGuidelineCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AF874C9384C75AA841193 /* WigGuidelineCalculatorTests.swift */; };
+		1A9F4A40729D4B37AF1C5716 /* WebExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E9A7F24524EB1A960F7A5 /* WebExperienceView.swift */; };
+		1ABD25AF9C5D4A2E8B5030E5 /* LaceFrontWigs.app in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEEF544E92F4ABEAC6B1A4B /* LaceFrontWigs.app */; };
+		1AF2F85D9B024E02B96EC56C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2D4F05FDE4D21A034B5C8 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A7F44BAE6E64A4DB2CFB216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A8B2B3056D8407C96FC7E5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1DC6A0A2AA48E3BD0070EB;
+			remoteInfo = LaceFrontWigs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A1A37FC36184757B1BE6E56 /* CameraSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSessionManager.swift; sourceTree = "<group>"; };
+		1A1F582E604347EB809015B4 /* GuidelineOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineOverlayView.swift; sourceTree = "<group>"; };
+		1A3EDF9376BC4FADBE3A1D32 /* WigGuidelineCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WigGuidelineCalculator.swift; sourceTree = "<group>"; };
+		1A3F2DEE0D2643C0B9BCA5C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A47A3F4D3A1434E91F79A4F /* WigGuidelineState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WigGuidelineState.swift; sourceTree = "<group>"; };
+		1A4A9F9A6BB54D059B71E5D0 /* LaceFrontWigsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaceFrontWigsApp.swift; sourceTree = "<group>"; };
+		1A604A11E8C2481DBD65AB61 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		1A652BFC0AEB4E408D4F2FA3 /* LaceFrontWigsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaceFrontWigsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6B1AE86E274382A97C0B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6E9A7F24524EB1A960F7A5 /* WebExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebExperienceView.swift; sourceTree = "<group>"; };
+		1A73D15B86C94333A6D3D8E8 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		1A7FB56C1608420C86D3C57E /* FaceTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingViewModel.swift; sourceTree = "<group>"; };
+		1A8AF874C9384C75AA841193 /* WigGuidelineCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WigGuidelineCalculatorTests.swift; sourceTree = "<group>"; };
+		1A9AB1D5DA364A25A8BAEF6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AB2D4F05FDE4D21A034B5C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1AEEF544E92F4ABEAC6B1A4B /* LaceFrontWigs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaceFrontWigs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A1D6E3F66A54A44BB5E847F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABD25AF9C5D4A2E8B5030E5 /* LaceFrontWigs.app in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2CA2177BD949C6AA7B4CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A1D34E1C80D4653B52E2047 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A3F2DEE0D2643C0B9BCA5C5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A2E1D0FE2A04C5FA31774CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A73D15B86C94333A6D3D8E8 /* CameraPreviewView.swift */,
+				1A1F582E604347EB809015B4 /* GuidelineOverlayView.swift */,
+				1A6E9A7F24524EB1A960F7A5 /* WebExperienceView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A5CC3E7268E4379812E7F4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A47A3F4D3A1434E91F79A4F /* WigGuidelineState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A8FBE9E04BF4AEAAA6A535F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A9AB1D5DA364A25A8BAEF6A /* Assets.xcassets */,
+				1A6B1AE86E274382A97C0B77 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A90FB7D96AC4B2F9150A5DA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A7FB56C1608420C86D3C57E /* FaceTrackingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1A974640A8E245AF838D2328 = {
+			isa = PBXGroup;
+			children = (
+				1AD6E6AEEC914404B1B76F1E /* LaceFrontWigs */,
+				1ACFF2AC77444F0F9E0B5D4A /* LaceFrontWigsTests */,
+				1ABA9AB12DF14CB58CF1D54C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ABA9AB12DF14CB58CF1D54C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AEEF544E92F4ABEAC6B1A4B /* LaceFrontWigs.app */,
+				1A652BFC0AEB4E408D4F2FA3 /* LaceFrontWigsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AC3D4E5E4204B5CA10E438C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A604A11E8C2481DBD65AB61 /* CGPoint+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1ACFF2AC77444F0F9E0B5D4A /* LaceFrontWigsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A8AF874C9384C75AA841193 /* WigGuidelineCalculatorTests.swift */,
+			);
+			path = LaceFrontWigsTests;
+			sourceTree = "<group>";
+		};
+		1AD6E6AEEC914404B1B76F1E /* LaceFrontWigs */ = {
+			isa = PBXGroup;
+			children = (
+				1A4A9F9A6BB54D059B71E5D0 /* LaceFrontWigsApp.swift */,
+				1AB2D4F05FDE4D21A034B5C8 /* ContentView.swift */,
+				1A5CC3E7268E4379812E7F4A /* Models */,
+				1A90FB7D96AC4B2F9150A5DA /* ViewModels */,
+				1AEC4E9A2428452BAD756827 /* Services */,
+				1A2E1D0FE2A04C5FA31774CB /* Views */,
+				1AC3D4E5E4204B5CA10E438C /* Utilities */,
+				1A8FBE9E04BF4AEAAA6A535F /* Resources */,
+				1A1D34E1C80D4653B52E2047 /* Preview Content */,
+			);
+			path = LaceFrontWigs;
+			sourceTree = "<group>";
+		};
+		1AEC4E9A2428452BAD756827 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1A1A37FC36184757B1BE6E56 /* CameraSessionManager.swift */,
+				1A3EDF9376BC4FADBE3A1D32 /* WigGuidelineCalculator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A1C18C9091545C18D9846F0 /* LaceFrontWigsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AA5B8AD5EED4307AE3AEF38 /* Build configuration list for PBXNativeTarget "LaceFrontWigsTests" */;
+			buildPhases = (
+				1A57C2D1266B45B5B50FF2DE /* Sources */,
+				1A1D6E3F66A54A44BB5E847F /* Frameworks */,
+				1A862B8F8D3343A99BEB9039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A6CEDC9F2194B4FA00FAD93 /* PBXTargetDependency */,
+			);
+			name = LaceFrontWigsTests;
+			productName = LaceFrontWigsTests;
+			productReference = 1A652BFC0AEB4E408D4F2FA3 /* LaceFrontWigsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A1DC6A0A2AA48E3BD0070EB /* LaceFrontWigs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4EC7395EE24C77AF2D0838 /* Build configuration list for PBXNativeTarget "LaceFrontWigs" */;
+			buildPhases = (
+				1A61CF35CC234568A1D3DE66 /* Sources */,
+				1A2CA2177BD949C6AA7B4CF2 /* Frameworks */,
+				1AA4C79CFB414AF6A773C92C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaceFrontWigs;
+			productName = LaceFrontWigs;
+			productReference = 1AEEF544E92F4ABEAC6B1A4B /* LaceFrontWigs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A8B2B3056D8407C96FC7E5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					1A1C18C9091545C18D9846F0 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					1A1DC6A0A2AA48E3BD0070EB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 1A7B8609A1EF4A689C5B0AE8 /* Build configuration list for PBXProject "LaceFrontWigs" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A974640A8E245AF838D2328;
+			productRefGroup = 1ABA9AB12DF14CB58CF1D54C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A1DC6A0A2AA48E3BD0070EB /* LaceFrontWigs */,
+				1A1C18C9091545C18D9846F0 /* LaceFrontWigsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A862B8F8D3343A99BEB9039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA4C79CFB414AF6A773C92C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A484B0F4A684DF7957E3C28 /* Assets.xcassets in Resources */,
+				1A71D9BB9B3B4C1E8D181EE7 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A57C2D1266B45B5B50FF2DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9B7DF9C6334E6C8FE9A96C /* WigGuidelineCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A61CF35CC234568A1D3DE66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9F4A40729D4B37AF1C5716 /* WebExperienceView.swift in Sources */,
+				1A3F96AFEC484A27A10B7809 /* WigGuidelineCalculator.swift in Sources */,
+				1A3E7EC8A7C04E89AA2C5C99 /* CameraPreviewView.swift in Sources */,
+				1A35E1F75986432FAAB03588 /* CGPoint+Extensions.swift in Sources */,
+				1A04CE38219C452DA4F68791 /* CameraSessionManager.swift in Sources */,
+				1AF2F85D9B024E02B96EC56C /* ContentView.swift in Sources */,
+				1A6A4B0BFC1F4B1E8F9D4AD3 /* WigGuidelineState.swift in Sources */,
+				1A7B90E5D28C4ECB82BC2A5B /* GuidelineOverlayView.swift in Sources */,
+				1A08CC7D403A49C8B0F8E0A0 /* FaceTrackingViewModel.swift in Sources */,
+				1A5E3D3515F64C1BAE418CA9 /* LaceFrontWigsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A6CEDC9F2194B4FA00FAD93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1DC6A0A2AA48E3BD0070EB /* LaceFrontWigs */;
+			targetProxy = 1A7F44BAE6E64A4DB2CFB216 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A60CEB44F4440328223ECE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1A6B0A4CFFE7466EADBC471B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LaceFrontWigs/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lacefrontwigs.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaceFrontWigs.app/LaceFrontWigs";
+			};
+			name = Release;
+		};
+		1A8DE27F530A4B6EA275DC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LaceFrontWigs/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lacefrontwigs.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaceFrontWigs.app/LaceFrontWigs";
+			};
+			name = Debug;
+		};
+		1AE6857D561E48F09D16DA5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LaceFrontWigs/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y36H9Z562;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LaceFrontWigs/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lacefrontwigs.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1AE997A0BA0E4F2EAC68A2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LaceFrontWigs/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y36H9Z562;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LaceFrontWigs/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lacefrontwigs.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1AF52E7FA7984B5DBEEA85D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A4EC7395EE24C77AF2D0838 /* Build configuration list for PBXNativeTarget "LaceFrontWigs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE997A0BA0E4F2EAC68A2A5 /* Debug */,
+				1AE6857D561E48F09D16DA5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1A7B8609A1EF4A689C5B0AE8 /* Build configuration list for PBXProject "LaceFrontWigs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF52E7FA7984B5DBEEA85D5 /* Debug */,
+				1A60CEB44F4440328223ECE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1AA5B8AD5EED4307AE3AEF38 /* Build configuration list for PBXNativeTarget "LaceFrontWigsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A8DE27F530A4B6EA275DC81 /* Debug */,
+				1A6B0A4CFFE7466EADBC471B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A8B2B3056D8407C96FC7E5B /* Project object */;
+}
